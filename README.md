@@ -1,139 +1,182 @@
-# Customer Shopping Behavior Analysis
+# Customer Shopping Behavior Analysis (End-to-End Data Analytics Project)
 
-## Project Overview
+## Problem Statement
 
-This project analyzes customer purchasing patterns to uncover actionable insights that drive business decisions. The analysis is based on transactional data containing **3,900 purchase records** with customer demographics, purchasing behavior, and engagement metrics.
-
-The objective is to identify high-value customers, evaluate purchasing trends, and recommend strategies to improve revenue, retention, and customer segmentation.
+E-commerce businesses often struggle to identify high-value customers, optimize revenue streams, and improve retention. This project analyzes customer transaction data to uncover behavioral patterns and generate actionable business strategies.
 
 ---
 
-## Dataset Summary
+## Project Objective
 
-* **Total Records:** 3,900 transactions
-* **Features:** 18 columns
-* **Missing Values:** 37 (handled during preprocessing)
-* **Key Attributes:**
-
-  * Customer demographics (age, gender)
-  * Purchase amount
-  * Product category
-  * Discount usage
-  * Shipping type
-  * Subscription status
-  * Review ratings
+* Identify key drivers of revenue
+* Segment customers based on behavior and value
+* Evaluate impact of discounts, shipping, and subscriptions
+* Provide data-driven business recommendations
 
 ---
 
-## Data Processing
+## Dataset Overview
 
-The dataset was cleaned and prepared using Python.
+* **Total Transactions:** 3,900
+* **Features:** 18
+* **Missing Values:** Handled using median imputation
 
-### Steps Performed:
+The dataset includes:
 
-* Loaded dataset using pandas
-* Performed exploratory data analysis (EDA)
-* Handled missing values using median imputation
-* Created new features:
-
-  * Age groups
-  * Purchase frequency categories
-* Prepared structured data for SQL-based analysis
-
----
-
-## Tools & Technologies
-
-* **Python** (Pandas, NumPy, Matplotlib/Seaborn)
-* **SQL** (PostgreSQL for querying and aggregation)
-* **Power BI** (Dashboard visualization)
-* **Jupyter Notebook** (Analysis workflow)
+* Customer demographics
+* Purchase behavior
+* Product categories
+* Discount usage
+* Shipping preferences
+* Subscription status
 
 ---
 
-## Key Insights
+## Tech Stack
 
-### 1. Revenue by Gender
-
-* Female customers generate slightly higher total revenue than male customers
-* Indicates opportunity for targeted marketing campaigns
-
----
-
-### 2. High-Value Discount Users
-
-* Identified customers who spend above average while using discounts
-* These users maximize value and should be targeted with premium offers
+* **Python** → Data cleaning, EDA
+* **SQL** → Analytical querying
+* **Power BI** → Dashboard & visualization
+* **Jupyter Notebook** → Workflow execution
 
 ---
 
-### 3. Product Performance
+## Data Pipeline
 
-* Top-rated categories:
-
-  * Blouse (highest rating)
-  * Dress (consistent performance)
-  * Shirt (strong customer approval)
-
----
-
-### 4. Shipping Impact
-
-* Express shipping customers spend ~12% more than standard shipping users
-* Faster delivery correlates with higher purchase value
+1. Data Cleaning & Preprocessing (Python)
+2. Feature Engineering
+3. SQL-based Analysis
+4. Visualization (Power BI)
+5. Business Insight Generation
 
 ---
 
-### 5. Subscription Effect
+## Key Analysis & Insights
 
-* Subscribers spend **68% more** than non-subscribers
-* Contribute ~45% of total revenue
-* Show higher repeat purchase rates
+### 1. Revenue Drivers
+
+* Female customers contribute slightly higher revenue
+* Subscription users significantly outperform non-subscribers
+
+**Insight:** Revenue is influenced more by engagement (subscriptions) than demographics.
 
 ---
 
-### 6. Customer Segmentation
+### 2. Discount Behavior Analysis
 
-Customers were categorized into:
+* High-spending customers still use discounts
+* Indicates price sensitivity even among premium users
 
-* **New Customers (50%)** – First-time buyers
-* **Returning Customers (35%)** – Moderate engagement
-* **Loyal Customers (15%)** – High-value segment
+**Insight:** Discounts should be strategic, not blanket-based.
+
+---
+
+### 3. Shipping vs Spending
+
+* Express shipping users spend ~12% more
+
+**Insight:** Faster delivery increases perceived value → higher order size
+
+---
+
+### 4. Product Performance
+
+Top-performing categories:
+
+* Blouse
+* Dress
+* Shirt
+
+**Insight:** High ratings directly correlate with repeat purchases
+
+---
+
+### 5. Customer Segmentation
+
+* New: 50%
+* Returning: 35%
+* Loyal: 15%
+
+**Insight:** Majority of customers are low-retention → growth opportunity
 
 ---
 
 ## Dashboard
 
-An interactive Power BI dashboard was created to visualize:
+The Power BI dashboard provides:
 
-* Revenue trends
-* Customer segmentation
-* Purchase behavior
+* Customer segmentation breakdown
+* Revenue distribution
+* Purchase trends
 * Subscription impact
-
----
-
-## Files in Repository
-
-* `project.ipynb` → Data analysis and preprocessing
-* `SQLQuery1.sql` → SQL queries used for insights
-* `customer_behaviour_dashboard.pbix` → Power BI dashboard
-* `Customer-Shopping-Behavior-Analysis.pptx` → Business presentation
 
 ---
 
 ## Business Recommendations
 
-* Promote subscription programs to increase revenue
-* Implement loyalty programs for repeat customers
-* Target high-value customers with personalized offers
-* Highlight top-rated products in marketing campaigns
-* Encourage express shipping to increase order value
+### 1. Subscription Optimization
+
+* Promote exclusive offers for subscribers
+* Convert high-value non-subscribers
+
+---
+
+### 2. Retention Strategy
+
+* Introduce loyalty programs
+* Target returning customers with incentives
+
+---
+
+### 3. Pricing Strategy
+
+* Avoid overusing discounts
+* Focus on targeted discount campaigns
+
+---
+
+### 4. Logistics Optimization
+
+* Promote express shipping as a premium option
+
+---
+
+## Project Structure
+
+* `project.ipynb` → Data analysis & preprocessing
+* `SQLQuery1.sql` → SQL queries
+* `customer_behaviour_dashboard.pbix` → Dashboard
+* `Customer-Shopping-Behavior-Analysis.pptx` → Business presentation
+
+---
+
+## What This Project Demonstrates
+
+* End-to-end data analysis workflow
+* Business-focused thinking (not just coding)
+* Ability to translate data into decisions
+* Multi-tool integration (Python + SQL + BI tools)
+
+---
+
+## Limitations
+
+* No predictive modeling
+* No time-series or cohort analysis
+* Insights are descriptive, not causal
+
+---
+
+## Future Improvements
+
+* Customer Lifetime Value (CLV) modeling
+* Cohort & retention analysis
+* Predictive modeling (churn, purchase probability)
 
 ---
 
 ## Conclusion
 
-This project demonstrates how data analysis can transform raw transactional data into meaningful business insights. By leveraging Python, SQL, and Power BI, the analysis provides a complete pipeline from data cleaning to visualization and strategic recommendations.
+This project moves beyond basic analysis by connecting data insights with real business impact. It demonstrates how structured analysis can guide strategic decisions in customer targeting, pricing, and retention.
 
 ---
